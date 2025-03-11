@@ -31,11 +31,9 @@ variable "rs_container_key" {
 variable "target_tenant_id" {
   description = "The target tenant id"
   type        = string
-  default     = env("ARM_TENANT_ID")
 }
 
 variable "target_subscription_id" {
   description = "The target subscription id"
   type        = string
-  default     = env("ARM_SUBSCRIPTION_ID")
 }
