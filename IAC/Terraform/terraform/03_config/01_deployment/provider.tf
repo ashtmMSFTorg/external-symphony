@@ -17,8 +17,8 @@ terraform {
 }
 
 provider "azurerm" {
-  tenant_id       = coalesce(var.target_tenant_id, getenv("ARM_TENANT_ID"))
-  subscription_id = coalesce(var.target_subscription_id, getenv("ARM_SUBSCRIPTION_ID"))
+  tenant_id       = var.target_tenant_id
+  subscription_id = var.target_subscription_id
   use_oidc        = true
 
   features {}
