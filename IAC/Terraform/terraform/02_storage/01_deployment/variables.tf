@@ -11,9 +11,11 @@ variable "env" {
 variable "target_tenant_id" {
   description = "The target tenant id"
   type        = string
+  default     = null
 }
 
 variable "target_subscription_id" {
   description = "The target subscription id"
   type        = string
+  default     = null
 }
